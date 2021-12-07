@@ -1,13 +1,28 @@
-document.getElementById('paragraph').style.color = 'green';
+// document.getElementById('paragraph').style.color = 'green';
 
-document.getElementById('page-title').innerText = 'Viva, a vida é uma festa';
+document.querySelector('#paragraph').style.color = 'green';
 
-document.getElementById('subtitle').innerText = 'Outros filmes interessantes:';
+// document.getElementById('page-title').innerText = 'Viva, a vida é uma festa';
 
-//a função abaixo não está funcionando corretamente pois o querySelector puxa apenas um único elemento (e o primeiro que for selecionado), não sendo possível puxar o h2 e o h2 juntos.
-document.querySelector('h2', 'h3').classList.add('paragrafo');
+document.querySelector('#page-title').innerText = 'Viva, a vida é uma festa';
 
-document.getElementsByClassName('paragrafo')[0].style.color = 'blue';
 
-document.getElementsByTagName('h4')[0].style.color = 'red'
-document.getElementsByTagName('h4')[1].style.color = 'yellow'
+// document.getElementById('subtitle').innerText = 'Outros filmes interessantes:';
+
+document.querySelector('#subtitle').innerText = 'Outros filmes interessantes';
+
+document.querySelector('h2').classList.add('paragrafo');
+
+
+// document.getElementsByClassName('paragrafo')[0].style.color = 'blue';
+
+document.querySelectorAll('.paragrafo')[0].style.color = 'blue';
+
+// document.getElementsByTagName('h4')[0].style.color = 'red'
+
+document.querySelector('h4').style.color = 'red'
+
+// document.getElementsByTagName('h4')[1].style.color = 'yellow'
+
+document.querySelectorAll('h4')[0].style.color = 'yellow'
+document.querySelectorAll('h4')[1].style.color = 'red'
