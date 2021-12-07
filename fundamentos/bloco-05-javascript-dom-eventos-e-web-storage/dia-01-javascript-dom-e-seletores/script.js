@@ -26,3 +26,5 @@ document.querySelector('h4').style.color = 'red'
 
 document.querySelectorAll('h4')[0].style.color = 'yellow'
 document.querySelectorAll('h4')[1].style.color = 'red'
+
+// .
